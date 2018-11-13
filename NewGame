@@ -1,0 +1,24 @@
+%PSEUDOCODE FOR GAME
+%1. make a grid
+%2. Initialize everything (x max, x y, plot morty and villains)
+%3. make movement of characters possible (up and down only)
+%4. make villain's column of movement shift to the left one every s
+%5. if morty's coordinates = villain's coordinates
+%   game over
+% maybe do a while loop? while morty's coordinates ~= villain's coordinates
+% and then do the main game loop?
+% at x max you win? or a certain column
+% add sound and images
+
+
+ % code
+x0 = 0;
+y = 0;
+v = 2;                   %Velocity of 2
+for time=1:100
+x = x0 + v*time;        
+plot(x, y,'r*');         %Plot the red dot
+axis([-1 100 -10 10])
+drawnow();
+%pause(0.1)
+end
